@@ -1,3 +1,16 @@
+#! /usr/bin/env bash
+
+## Bash script to setup PX4 development environment on Ubuntu LTS (18.04, 16.04).
+## Can also be used in docker.
+##
+## Installs:
+## - Common dependencies and tools for nuttx, jMAVSim, Gazebo
+## - NuttX toolchain (omit with arg: --no-nuttx)
+## - jMAVSim and Gazebo9 simulator (omit with arg: --no-sim-tools)
+##
+## Not Installs:
+## - FastRTPS and FastCDR
+
 set -e
 
 INSTALL_NUTTX="true"
